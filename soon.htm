@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soon ...</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="soon.css">
+</head>
+<body>
+
+    <!-- particles -->
+    <div id="particles-js"></div>
+
+    <!-- background video -->
+    <!-- <video src="img/work.mp4" poster="img/Capture.PNG" loop muted autoplay></video> -->
+    <!-- <div class="bg-img img-fluid"></div> -->
+    <div class="all w-100 h-100">
+    <main class="container">
+        
+        <!-- header -->
+        <header class="text-center">
+            <h1>TeraNinja</h1>
+            <p class="text-muted fw-bolder" dir="rtl">نفخر بكوننا الشركة الأولى في مجال اللإدارة والأعمال... معا نسعى لغد أفضل.</p>
+            <p class="text-muted fw-bold mb-3">an Awesome Coming Soon!</p>
+            <div class="smScBtns">
+                <div onclick="info()" class="btn btn-dark border-dark d-flex justify-content-center align-items-center shadow-sm">
+                    <i class="fa-solid fa-info"></i>
+                </div>
+                <div onclick="mail()" class="btn btn-dark border-dark d-flex justify-content-center align-items-center shadow-sm">
+                    <i class="fa-regular fa-envelope-open"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- middle -->
+        <article class="row">
+            <div class="col-md-3 col-6 mt-2 mb-2">
+                <div id="day">
+                    <span id="d" class="fw-bolder" data-time="30"></span>
+                    <span class="text-muted">Day</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 mt-2 mb-2">
+                <div id="hour">
+                    <span id="h" class="fw-bolder" data-time="14"></span>
+                    <span class="text-muted">hour</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 mt-2 mb-2">
+                <div id="minute">
+                    <span id="m" class="fw-bolder" data-time="34"></span>
+                    <span class="text-muted">minute</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 mt-2 mb-2">
+                <div id="second">
+                    <span id="s" class="fw-bolder" data-time="60"></span>
+                    <span class="text-muted">second</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- footer -->
+        <footer class="align-self-end">
+            <!-- form -->
+            <form action="" class="">
+                <input type="email" class="form-control" placeholder="Enter your Email ..." required>
+                <button type="button" class="btn fw-bold btn-dark border-dark shadow rounded-circle"><i class="fa-regular fa-paper-plane"></i></button>
+                <img src="img/mail-icon.png" class="shadow-sm" alt="img">
+            </form>
+            <!-- social media -->
+            <section class="text-center">
+                <i class="fa-brands fa-facebook-f border-dark shadow-sm border btn btn-dark rounded-circle"></i>
+                <i class="fa-brands fa-youtube border-dark shadow-sm border btn btn-dark rounded-circle"></i>
+                <i class="fa-brands fa-twitter border-dark shadow-sm border btn btn-dark rounded-circle"></i>
+                <i class="fa-brands fa-github border-dark shadow-sm border btn btn-dark rounded-circle"></i>
+                <i class="fa-brands fa-linkedin-in border-dark shadow-sm border btn btn-dark rounded-circle"></i>
+            </section>
+            <p class="text-center text-muted fw-bold m-0 p-2 pb-0">© Copyright 2022 Solomon King Studio. An Initiative of TeraNinja.</p>
+        </footer>
+        
+    </main>
+
+</div>  
+    
+    <!-- right modal -->
+    <div onclick="mail()" class="btn btn-dark border-dark shadow-sm mail">
+        <i class="fa-regular fa-envelope-open"></i>
+    </div>
+
+    <div class="mailModal container-fluid d-flex flex-column">
+        <h1 class="fw-bolder mb-0 text-center align-self-center">Contact Us</h1>
+        <div class="m-auto">
+            <p class="m-0"><span class="fw-bold">Tel:</span> +2011 699 726</p>
+            <p class="m-0"><span class="fw-bold">Tel:</span> +2011 699 726</p>
+            <p class="m-0"><span class="fw-bold">email:</span> +2011 699 726</p>
+            <p class="m-0"><span class="fw-bold">address:</span> +2011 699 726</p>
+        </div>
+        <button class="text-center" onclick="mail()"><i class="fa-solid fa-angles-up"></i></button>
+    </div>
+
+    <!-- left modal -->
+    <div onclick="info()" class="btn btn-dark border-dark shadow-sm info">
+        <i class="fa-solid fa-info"></i>
+    </div>
+
+    <div class="infoModal container-fluid d-flex flex-column">
+        <h1 class="fw-bolder mb-0 text-center align-self-center">About Us</h1>
+        <div class="m-auto">
+            <h5 class="mt-3 text-center" dir="rtl">نفخر بكوننا الشركة الأولى في مجال اللإدارة والأعمال... معا نسعى لغد أفضل.</h5>
+            <h5 class="mb-3 text-center">an Awesome Coming Soon!</h5>
+        </div>
+        <button class="text-center" onclick="info()"><i class="fa-solid fa-angles-up"></i></button>
+    </div>
+
+    <script src="particles.js-master/particles.min.js"></script>
+    <script src="particles.js-master/particles.js"></script>
+    <script src="https://kit.fontawesome.com/63c1d829d8.js" crossorigin="anonymous"></script>
+    <script src="soon.js"></script>
+</body>
+</html>
